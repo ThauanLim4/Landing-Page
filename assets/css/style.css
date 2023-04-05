@@ -1,0 +1,258 @@
+    :root {
+        --primary-color: #FF7700;
+        --branco-color: #ffffff;
+        --gap: 3rem;
+        --secondary-color: #89CC7C;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 62.5%;
+        height: 100vh;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-size: 2.5rem;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Changa One', cursive;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .fundo {
+        background-image: url(../img/scattered\ fundo\ mais\ escuro.svg);
+        background-size: cover;
+        background-position: center center;
+        color: var(--branco-color);
+    }
+
+    .fundo-branco {
+        background-image: url(../img/scattered-forcefields\ \(1\).svg);
+    }
+
+    .main-content {
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: var(--gap);
+    }
+
+    .section {
+        min-height: 100vh;
+    }
+
+    .menu {
+        background-color: var(--branco-color);
+        position: fixed;
+        width: 100%;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    .menu-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    nav ul li a,
+    h1 a {
+        color: var(--primary-color);
+    }
+
+    .menu ul {
+        display: flex;
+        list-style: none;
+        padding: 10px;
+    }
+
+    .menu ul li a {
+        position: relative;
+        padding: 1.5rem;
+        display: block;
+    }
+
+    .menu ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: 1rem;
+        background: var(--secondary-color);
+        transition: all 300ms ease-in-out;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        text-shadow: 0px 0px black;
+
+    }
+
+    .menu ul li a:hover::after {
+        width: 50%;
+        left: 25%;
+    }
+
+    .space {
+        height: 100px;
+    }
+
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--gap);
+        align-items: start;
+        justify-content: start;
+    }
+
+    .divum h2 {
+        text-shadow: 3px 3px 5px black;
+    }
+
+    .img-svg {
+        max-width: 100%;
+        height: auto;
+        flex-flow: column;
+        justify-content: center;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .divdois {
+        color: #FF7700;
+        height: 100vh;
+        max-width: 80rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: start;
+        padding: 4rem;
+    }
+
+    .Experiencias {
+        background-color: rgba(0, 0, 0, 0.835);
+        padding-left: 2rem;
+        border-radius: 2rem;
+    }
+
+    .galeria img {
+        margin: auto;
+        width: 100%;
+        max-width: 36rem;
+        max-height: 36rem;
+        display: flex;
+        padding: var(--gap);
+        transition: all 320ms ease-in-out;
+    }
+
+    .galeria img:hover {
+        transform: scale(0.8);
+    }
+
+    .Galeria-de-Arte {
+        text-align: center;
+        color: var(--primary-color);
+        padding: var(--gap);
+    }
+
+    .price {
+        background-image: url(../img/scattered\ fundo\ mais\ escuro.svg);
+        background-size: cover;
+        background-position: center center;
+        color: var(--branco-color);
+        min-height: 100vh;
+        background-image: url(../img/scattered-forcefields\ \(1\).svg);
+        color: var(--secondary-color);
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table td,
+    table tr {
+        border: 1px solid var(--primary-color);
+        border-collapse: collapse;
+        text-align: center;
+        background-color: gray;
+    }
+
+    .divcontato {
+        color: var(--primary-color);
+    }
+    .img-contact {
+        max-width: 100%;
+        height: auto;
+        flex-flow: column;
+        justify-content: center;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .formcontato {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        gap: var(--gap);
+        flex-wrap: wrap;
+    }
+
+    .grupo {
+        min-width: 320px;
+        color: #89CC7C;
+    }
+    .grupo label {
+        display: block;
+    }
+    .grupo input,
+    .grupo textarea {
+        border: 0.2rem solid var(--secondary-color);
+        padding: 1.5rem;
+        width: 100%;
+        outline: none;
+    }
+    .button {
+        border: none;
+        padding: 1.5rem;
+        background-color: var(--branco-color);
+        color: var(--secondary-color);
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+    }
+    .button:hover {
+        background-color: var(--secondary-color);
+        color: var(--branco-color);
+    }
+    .grupo input:focus,
+    .grupo textarea:focus {
+        box-shadow: 0px 0px 10px 2px var(--secondary-color);
+    } 
+    .feito {
+        color: #FF7700;
+        text-align: center;
+        padding: var(--gap);
+    }
+.topo {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--primary-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 0.2rem solid black;
+    color: white;
+}
